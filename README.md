@@ -55,15 +55,18 @@ int main() {
     // Allocate memory blocks
     int *a = (int *)myAlloc(sizeof(int));
     int *b = (int *)myAlloc(sizeof(int));
+    printFreeList();
 
     // Free memory block 'a'
     myFree(a);
 
     // Allocate a character array
     char *s = (char *)myAlloc(sizeof(char) * 20);
+    printFreeList();
 
     // Free memory block 's'
     myFree(s);
+    printFreeList();
 
     return 0;
 }
