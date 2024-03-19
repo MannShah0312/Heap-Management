@@ -73,10 +73,6 @@ int main() {
 
 - This project requires a compatible C compiler to build and execute.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Contributions
 
 Contributions to the Flight Management System project are welcome! Whether it's bug fixes, feature enhancements, or documentation improvements, feel free to contribute to make this project even better.
