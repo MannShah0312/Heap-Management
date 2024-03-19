@@ -153,31 +153,3 @@ void printFreeList()
     }
     printf("End\n");
 }
-
-void main()
-{
-    Initialize_Heap();
-    int *a, *b, *c, *d;
-    a = (int *)myAlloc(sizeof(int));
-    b = (int *)myAlloc(sizeof(int));
-    c = (int *)myAlloc(sizeof(int));
-    d = (int *)myAlloc(sizeof(int));
-    printf("abcd allocated: ");
-    printFreeList();
-
-    myFree(a);
-    printf("a freed: ");
-    printFreeList();
-
-    myFree(d);
-    printf("Freed: ");
-    printFreeList();
-
-    char *s;
-    s = (char *)myAlloc(sizeof(char) * 20);
-    printf("char allocated: ");
-    printFreeList();
-    myFree(s);
-    printf("s freed: ");
-    printFreeList();
-}
